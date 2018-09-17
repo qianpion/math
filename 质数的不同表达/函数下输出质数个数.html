@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>输出质数个数</title>
+</head>
+<body>
+	<script>
+         //输出1-10000里面的质数
+          for(var i=1;i<=10000;i++){
+         	if(isZs(i)==true){
+         		console.log(i);
+         	}
+         }
+
+         
+
+         function isZs(num){
+             if(amount(num)==2){
+             	return true;
+             }else{
+             	return false;
+             }
+         }
+
+function amount(num){
+         	var sum=0;
+             for(var i=1;i<=num;i++){
+             	if(num%i==0){
+             		sum++;
+             	}
+             }
+             return sum;
+         }
+	</script>
+</body>
+</html>

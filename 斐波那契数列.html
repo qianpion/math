@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>斐波那契数列</title>
+</head>
+<body>
+	<script>
+         // 1 1 2 3 5 8 13 21 34...
+         //输出前100位斐波那契数列所有的数
+         for(var i=1;i<=100;i++){
+         	console.log(fib(i));
+         }
+
+         //定义函数fib()，传入n,返回该n位置的数
+
+         function fib(n){
+         	if(n==1){
+         		return 1;
+         	}else if(n==2){
+         		return 1;
+         	}else{
+         		return fib(n-1)+fib(n-2);
+         	}
+         }
+	</script>
+</body>
+</html>
